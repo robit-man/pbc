@@ -110,7 +110,7 @@ margin-bottom: unset !important;
     justify-content: flex-end;max-width: 512px;
 height: fit-content;margin-right: -0.3rem;
 margin-top: -0.2rem;
-}.crosshair{background-image:url(/imgs/crosshair.svg); width:2.3rem;height:2.3rem;background-size:2.3rem;filter:invert(1);transition:all 0.2s ease;}.crosshair:hover{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));}
+}.crosshair{background-image:url(/imgs/crosshair.svg); width:2.32rem;height:2.32rem;background-size:2.32rem;filter:invert(1);transition:all 0.2s ease;}.crosshair:hover{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));}
 .footer-arrow{
     filter: invert(1);
     margin-left: 2rem;
