@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: "aldo";
+    src: url("/meek.ttf");
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -7,14 +11,14 @@ body {
 	padding: 0;
 	background-color: black;
 	overflow-x: hidden;
-	font-family: 'Rajdhani', sans-serif;
+	font-family: 'aldo';
 
 }
 p{
 	font-weight:100;
-    font-family: 'Rajdhani', sans-serif;}
+    font-family: 'aldo';}
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Rajdhani', sans-serif;
+	font-family: 'aldo';
 }
 a {
 	color: inherit;
@@ -41,7 +45,7 @@ input:disabled {
 	color: #ccc;
 }
 
-button {
+button {clip-path: polygon(0.5rem 0, 100% 0, 100% 100%, 0 100%, 0 0.5rem);
 	border:1px solid white;
 	padding:0.5rem 1rem;
 	margin:unset;
@@ -50,9 +54,9 @@ button {
 	display: block;
 	letter-spacing:2px;font-weight:900!important;
 	font-weight:normal;
-	transition:background-color 200ms, color 200ms ease;
+	transition:all 200ms ease;
 }
-button:hover {
+button:hover {clip-path: polygon(0rem 0, 100% 0, 100% 100%, 0 100%, 0 0rem);
 	padding:0.5rem 1rem;
 	color: white;
 	background-color: black;

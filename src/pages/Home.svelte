@@ -11,19 +11,21 @@ import { Router, Link, Route } from "svelte-routing";
           <img transition:slide src="/imgs/pbc(1).svg" alt="">
       </header>
       <article>
-          <div style="margin-top:-.2rem;background-size: 2rem;
-          background-position: bottom right;border:0.3rem solid white;">
-          <p style="">
-              <b transition:fade  style="font-weight:900!important;" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
-              <br> <br></p> </div>
+          <div style="margin-bottom: 1.7rem;margin-top:-.2rem;max-width: 512px;">
+          <p style="clip-path: polygon(100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0 0);">
+              <b transition:fade  style="" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
+              <br></p> 
+            <div class="line" style=""></div>
+            </div>
           <div class="button-row">
-          <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a>
+          <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a><div class="crosshair" style="margin-right:0.3rem;"></div>
           <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
           <a href="https://noclip.org/"><button>NOCLIP</button></a>
-          <a href="https://revest.finance/"><button>REVEST</button></a>
+          <a href="https://revest.finance/"><button>REVEST</button></a><div class="crosshair" style="margin-right:0.3rem;"></div>
           <a href="https://rena.finance"><button>RENA</button></a>
           <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
-          <a href="https://www.guranft.com/"><button>GURA NFT</button></a>
+          <a href="https://www.guranft.com/"><button>GURA NFT</button></a>        <div class="crosshair" style="margin-right:0.3rem;"></div>
+
         </div>
     </article>
     
@@ -46,6 +48,10 @@ import { Router, Link, Route } from "svelte-routing";
     padding:1rem;
     margin: auto;
     overflow-x: hidden;
+}
+@keyframes slide{
+    0%{background-position-x: 0rem;}
+    100%{background-position-x: 2rem;}
 }
 header{
     margin-top:6rem;
@@ -71,6 +77,7 @@ header > img{width:100%;height:auto;
     height:inherit;
 
 }
+.line{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));animation:slide 1s linear infinite;background-image:url(/imgs/repeatline.svg);background-size:1rem;margin-top:1.3rem;background-color:white;height:4rem;width:100%;}
 footer{
     margin-top: 2rem;
     padding: 2rem;
@@ -86,22 +93,24 @@ footer > .row p{
     margin-top:-4px;
 }
 article{
-    padding:0.5rem 0rem;display:flex;flex-flow:row;max-width:100%;
+    padding:0.5rem 0rem;display:flex;flex-flow:wrap;max-width:100%;
+    margin-top:1rem;
 }
-article > div > p{
-    text-align: left;
-    padding:0.3rem 0.5rem;background:white;
-    color:rgb(0, 0, 0);margin:unset;
+article > div > p{line-height: 1.2;
+    text-align: left;text-transform:uppercase;
+   
+    color:rgb(255, 255, 255);margin:unset;
+margin-bottom: unset !important;
 }
 .row{display:flex;flex-flow:row;}
 .column{display:flex;flex-flow:column;}
 .button-row{
     display: flex;
     flex-flow: wrap;
-    justify-content: flex-end;
+    justify-content: flex-end;max-width: 512px;
 height: fit-content;margin-right: -0.3rem;
 margin-top: -0.2rem;
-}
+}.crosshair{background-image:url(/imgs/crosshair.svg); width:2.3rem;height:2.3rem;background-size:2.3rem;filter:invert(1);transition:all 0.2s ease;}.crosshair:hover{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));}
 .footer-arrow{
     filter: invert(1);
     margin-left: 2rem;
