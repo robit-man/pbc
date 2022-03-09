@@ -8,8 +8,7 @@ import { Router, Link, Route } from "svelte-routing";
 <main>
   <div class="wrapper">
       <header>
-          <h1 transition:fade datadelay:200 >POINTBLANK</h1>
-          <img transition:slide src="/imgs/pointblank.svg" alt="">
+          <img transition:slide src="/imgs/pbc.png" alt="">
       </header>
       <article>
           <p>
@@ -46,18 +45,14 @@ import { Router, Link, Route } from "svelte-routing";
 }
 header{
     margin-top:6rem;
-    background:white;
-    width:calc(100% - 2rem);
-    padding:1rem;
-    max-height:30vh;
-    height:256px;
+    background:black;
+    width:auto;
+    padding:0rem;
+    height:auto;
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
-    clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%, 0 1rem);
+    justify-content: flex-start;
     pointer-events: none;
-    border-bottom-right-radius: 700px;
-    border-top-right-radius: 700px;
 }
 header > h1{
     text-align:left;
@@ -68,10 +63,8 @@ header > h1{
     font-size:6rem;
     line-height: 0.8;   
 }
-header > img{
-    position: absolute;
-    height:inherit;
-    animation: spin 100s linear infinite;
+header > img{width:100%;height:auto;
+    height:inherit;filter:invert(1);
 
 }
 footer{
@@ -139,19 +132,14 @@ header > h1{
 
 }
     header{
-    background: white;
-    width: calc(100vw - 3rem);
-    padding: 1rem;
-    min-height: 256px;
+    padding:0rem;
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: center;
     clip-path: unset;
     pointer-events: none;
-    border-bottom-right-radius: calc(128px + 1rem);
     border-top-right-radius: unset;
-    margin-left: -1rem;
-    margin-top: -1rem;
+    margin-top: 0rem;
     }
 }
 
