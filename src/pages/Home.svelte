@@ -96,7 +96,7 @@ article{
     padding:0.5rem 0rem;display:flex;flex-flow:wrap;max-width:100%;
     margin-top:1rem;
 }
-article > div > p{line-height: 1.2;
+article > div > p{line-height: 1.1;letter-spacing: 0.3rem;
     text-align: left;text-transform:uppercase;
    
     color:rgb(255, 255, 255);margin:unset;
