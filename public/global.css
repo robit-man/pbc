@@ -42,20 +42,20 @@ input:disabled {
 }
 
 button {
-	border:1x solid rgb(170, 170, 170);
+	border:1px solid white;
 	padding:0.5rem 1rem;
 	margin:unset;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 	display: block;
-	letter-spacing:2px;
+	letter-spacing:2px;font-weight:900!important;
 	font-weight:normal;
 	transition:background-color 200ms, color 200ms ease;
 }
 button:hover {
 	padding:0.5rem 1rem;
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: black;
 	outline: none;
 }
 

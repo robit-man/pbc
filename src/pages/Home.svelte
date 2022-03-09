@@ -8,22 +8,26 @@ import { Router, Link, Route } from "svelte-routing";
 <main>
   <div class="wrapper">
       <header>
-          <img transition:slide src="/imgs/pbc.png" alt="">
+          <img transition:slide src="/imgs/pbc(1).svg" alt="">
       </header>
       <article>
-          <p>
-              <b transition:fade  >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
-          </p>
-          
-          <p transition:fade >The latest projects we are aiding</p>
+          <div style="margin-top:-.2rem;background-size: 2rem;
+          background-position: bottom right;border:0.3rem solid white;">
+          <p style="">
+              <b transition:fade  style="font-weight:900!important;" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
+              <br> <br></p> </div>
           <div class="button-row">
           <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a>
           <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
           <a href="https://noclip.org/"><button>NOCLIP</button></a>
           <a href="https://revest.finance/"><button>REVEST</button></a>
-          <a href="https://pointblank.company/robot/"><button><img src="/imgs/robot.png" alt=""></button></a>
+          <a href="https://rena.finance"><button>RENA</button></a>
+          <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
+          <a href="https://www.guranft.com/"><button>GURA NFT</button></a>
         </div>
     </article>
+    
+    <!--
     <footer transition:slide >
         <div class="row">
         <div class="column">
@@ -33,7 +37,7 @@ import { Router, Link, Route } from "svelte-routing";
         <img class="footer-arrow" src="/imgs/fast-forward.svg" alt="">
         </div>
 
-    </footer>
+    </footer>-->
   </div>
 </main>
 
@@ -64,7 +68,7 @@ header > h1{
     line-height: 0.8;   
 }
 header > img{width:100%;height:auto;
-    height:inherit;filter:invert(1);
+    height:inherit;
 
 }
 footer{
@@ -82,20 +86,21 @@ footer > .row p{
     margin-top:-4px;
 }
 article{
-    padding:0.5rem 0rem;
-    margin-top:2rem;
-    max-width:512px;
+    padding:0.5rem 0rem;display:flex;flex-flow:row;max-width:100%;
 }
-article > p{
+article > div > p{
     text-align: left;
-    color:white;
+    padding:0.3rem 0.5rem;background:white;
+    color:rgb(0, 0, 0);margin:unset;
 }
 .row{display:flex;flex-flow:row;}
 .column{display:flex;flex-flow:column;}
 .button-row{
     display: flex;
     flex-flow: wrap;
-    max-width: 80vw;
+    justify-content: flex-end;
+height: fit-content;margin-right: -0.3rem;
+margin-top: -0.2rem;
 }
 .footer-arrow{
     filter: invert(1);
@@ -114,8 +119,8 @@ transition:filter 200ms ease;
 button:hover img{
     filter:invert(0);
 }
-.button-row > a {margin-right:0.5rem;
-margin-bottom:0.5rem;}
+.button-row > a {margin-right:0.3rem;
+margin-bottom:0.3rem;}
 @keyframes spin {
     0%{transform:rotate(0deg);
     }
