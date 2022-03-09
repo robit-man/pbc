@@ -18,7 +18,7 @@ import { Router, Link, Route } from "svelte-routing";
           <p transition:fade >The latest projects we are aiding</p>
           <div class="button-row">
           <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a>
-          <a href="https://dgpt.one/"><button>DGPT-1</button></a>
+          <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
           <a href="https://noclip.org/"><button>NOCLIP</button></a>
           <a href="https://revest.finance/"><button>REVEST</button></a>
           <a href="https://pointblank.company/robot/"><button><img src="/imgs/robot.png" alt=""></button></a>
