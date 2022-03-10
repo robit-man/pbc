@@ -7,27 +7,73 @@ import { Router, Link, Route } from "svelte-routing";
 
 <main>
   <div class="wrapper">
+<div class="row rotated">
       <header>
-          <img transition:slide src="/imgs/pbc(1).svg" alt="">
-      </header>
-      <article>
-          <div style="margin-bottom: 1.7rem;margin-top:-.2rem;max-width: 512px;">
-          <p style="clip-path: polygon(100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0 0);">
-              <b transition:fade  style="" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
-              <br></p> 
-            <div class="line" style=""></div>
-            </div>
-          <div class="button-row">
-          <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a><div class="crosshair" style="margin-right:0.3rem;"></div>
-          <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
-          <a href="https://noclip.org/"><button>NOCLIP</button></a>
-          <a href="https://revest.finance/"><button>REVEST</button></a><div class="crosshair" style="margin-right:0.3rem;"></div>
-          <a href="https://rena.finance"><button>RENA</button></a>
-          <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
-          <a href="https://www.guranft.com/"><button>GURA NFT</button></a>        <div class="crosshair" style="margin-right:0.3rem;"></div>
 
-        </div>
+
+        
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" style=""
+      width="200.000000px" height="200.000000px" viewBox="0 0 400.000000 400.000000"
+      preserveAspectRatio="xMidYMid meet">
+     
+      <g fill="white" stroke="none" transform="translate(-800.000000,400.000000) scale(0.100000,-0.100000)">
+     
+     <path d="M8090 2000 l0 -2000 1995 0 1995 0 0 985 0 985 -1005 0 -1005 0 0 30
+     0 30 1005 0 1005 0 0 985 0 985 -1995 0 -2000 0 0 -2000z"/>
+                
+     </g>
+     </svg>
+
+
+     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" style=""
+     width="200.000000px" height="200.000000px" viewBox="0 0 400.000000 400.000000"
+     preserveAspectRatio="xMidYMid meet">
+    
+     <g transform="translate(-400.000000,400.000000) scale(0.100000,-0.100000)"
+    fill="white" stroke="none">
+    <path d="M4050 2000 l0 -2000 1990 0 1990 0 0 2000 0 2000 -1990 0 -1990 0 0
+    -2000z m3020 1000 l0 -30 -1030 0 -1030 0 0 30 0 30 1030 0 1030 0 0 -30z m0
+    -2000 l0 -30 -1030 0 -1030 0 0 30 0 30 1030 0 1030 0 0 -30z"/>
+    </g>
+    </svg>   
+    
+
+    <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" style=""
+    width="200.000000px" height="200.000000px" viewBox="0 0 400.000000 400.000000"
+    preserveAspectRatio="xMidYMid meet">
+
+    <g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
+    fill="white" stroke="none">
+    <path d="M0 2000 l0 -2000 995 0 995 0 0 1005 0 1005 1000 0 1000 0 0 995 0
+    995 -1995 0 -1995 0 0 -2000z m3030 1000 l0 -30 -1030 0 -1030 0 0 30 0 30
+    1030 0 1030 0 0 -30z"/>
+    <path d="M2050 975 l0 -975 970 0 970 0 0 975 0 975 -970 0 -970 0 0 -975z"/>
+
+    </g>
+    </svg>    
+
+      
+
+             </header>
+      <article> <div class="button-row">
+        <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a><div class="crosshair" style="margin-left:0.3rem;"></div>
+        <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
+        <a href="https://noclip.org/"><button>NOCLIP</button></a>
+        <a href="https://revest.finance/"><button>REVEST</button></a><div class="crosshair" style="margin-left:0.3rem;"></div>
+        <a href="https://rena.finance"><button>RENA</button></a>
+        <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
+        <a href="https://www.guranft.com/"><button>GURA NFT</button></a>        <div class="crosshair" style="margin-left:0.3rem;"></div>
+
+      </div>                    <div class="line" style=""></div>
+ 
+          <div>
+          <p >
+              <b transition:fade  style="" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
+            </p> 
+            </div>
+
     </article>
+</div>
     
     <!--
     <footer transition:slide >
@@ -44,25 +90,26 @@ import { Router, Link, Route } from "svelte-routing";
 </main>
 
 <style>
-.wrapper{max-width:1024px;
+.wrapper{
     padding:1rem;
     margin: auto;
+    height:100vh;display:flex;justify-content: center;
     overflow-x: hidden;
 }
 @keyframes slide{
     0%{background-position-x: 0rem;}
     100%{background-position-x: 2rem;}
 }
+header > svg{transform:rotate(-90deg)}
 header{
-    margin-top:6rem;
-    background:black;
-    width:auto;
-    padding:0rem;
-    height:auto;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    pointer-events: none;
+    height:600px;
+    background: black;
+  width: min-content;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  pointer-events: none;
 }
 header > h1{
     text-align:left;
@@ -73,11 +120,17 @@ header > h1{
     font-size:6rem;
     line-height: 0.8;   
 }
-header > img{width:100%;height:auto;
-    height:inherit;
+header > img{width: 1024px;
+height: 339px;
+height: inherit;
+transform: rotate(90deg);
 
 }
-.line{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));animation:slide 1s linear infinite;background-image:url(/imgs/repeatline.svg);background-size:1rem;margin-top:1.3rem;background-color:white;height:4rem;width:100%;}
+.rotated{transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
+.line{clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
+    animation:slide 1s linear infinite;background-image:url(/imgs/repeatline.svg);background-size:1rem;
+    background-color:white;height:100%;width:100%;margin-bottom: 1.5rem;
+margin-top: 1.3rem;}
 footer{
     margin-top: 2rem;
     padding: 2rem;
@@ -93,14 +146,15 @@ footer > .row p{
     margin-top:-4px;
 }
 article{
-    padding:0.5rem 0rem;display:flex;flex-flow:wrap;max-width:100%;
-    margin-top:1rem;
+    padding:0.5rem 0rem;display:flex;flex-flow:column;justify-content:space-between;max-width:400px;
+    margin-top:1rem;height:600px;
 }
 article > div > p{line-height: 1.1;letter-spacing: 0.3rem;
-    text-align: left;text-transform:uppercase;
+    text-align: right;text-transform:uppercase;font-size:1.3rem;
    
     color:rgb(255, 255, 255);margin:unset;
 margin-bottom: unset !important;
+margin-right:-0.3rem;
 }
 .row{display:flex;flex-flow:row;}
 .column{display:flex;flex-flow:column;}
@@ -108,7 +162,7 @@ margin-bottom: unset !important;
     display: flex;
     flex-flow: wrap;
     justify-content: flex-end;max-width: 512px;
-height: fit-content;margin-right: -0.3rem;
+height: fit-content;
 margin-top: -0.2rem;
 }.crosshair{background-image:url(/imgs/crosshair.svg); width:2.32rem;height:2.32rem;background-size:2.32rem;filter:invert(1);transition:all 0.2s ease;}.crosshair:hover{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));}
 .footer-arrow{
@@ -128,7 +182,7 @@ transition:filter 200ms ease;
 button:hover img{
     filter:invert(0);
 }
-.button-row > a {margin-right:0.3rem;
+.button-row > a {margin-left:0.3rem;
 margin-bottom:0.3rem;}
 @keyframes spin {
     0%{transform:rotate(0deg);
@@ -145,11 +199,20 @@ header > h1{
 
 
 }
+
+
+header > svg{transform:rotate(0deg);width:auto;height:auto;}
+
+.rotated{display:flex;flex-flow:column;transform:rotate(0deg);margin:auto;transition:all 0.2s ease;}
+.line{height:100px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 2rem 100%, 0 calc(100% - 2rem));}
+article{height:auto;width:auto;}
     header{
+    height:auto;
+    width: auto;
     padding:0rem;
     display: flex;
-    flex-flow: row;
-    justify-content: center;
+    flex-flow: row-reverse;
+    justify-content: space-between;
     clip-path: unset;
     pointer-events: none;
     border-top-right-radius: unset;
