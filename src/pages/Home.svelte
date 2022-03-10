@@ -91,7 +91,7 @@ import { Router, Link, Route } from "svelte-routing";
 
 <style>
 .wrapper{
-    padding:1rem;
+    padding:0rem;
     margin: auto;
     height:100vh;display:flex;justify-content: center;
     overflow-x: hidden;
@@ -199,16 +199,16 @@ header > h1{
 
 
 }
-
+.wrapper{padding:1rem;}
 
 header > svg{transform:rotate(0deg);width:auto;height:auto;}
 
 .rotated{display:flex;flex-flow:column;transform:rotate(0deg);margin:auto;transition:all 0.2s ease;}
 .line{height:100px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 2rem 100%, 0 calc(100% - 2rem));}
-article{height:auto;width:auto;}
+article{height:auto;width:100%;}
     header{
     height:auto;
-    width: auto;
+    width: 100%;
     padding:0rem;
     display: flex;
     flex-flow: row-reverse;
