@@ -11,14 +11,14 @@ body {
 	padding: 0;
 	background-color: black;
 	overflow-x: hidden;
-	font-family: 'aldo';
+	    font-family: 'Rajdhani', sans-serif;
 
 }
 p{
 	font-weight:100;
-    font-family: 'aldo';}
+        font-family: 'Rajdhani', sans-serif;}
 h1, h2, h3, h4, h5, h6{
-	font-family: 'aldo';
+	    font-family: 'Rajdhani', sans-serif;
 }
 a {
 	color: inherit;
