@@ -64,7 +64,7 @@ import { Router, Link, Route } from "svelte-routing";
         <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
         <a href="https://www.guranft.com/"><button>GURA NFT</button></a>        <div class="crosshair" style="margin-left:0.3rem;"></div>
 
-      </div>                    <div class="line" style=""></div>
+      </div>                    <div class="line" style="display:flex;flex-flow:wrap;justify-content:center;"><img class="imgspin" src="/imgs/pointblank.svg" alt=""></div>
  
           <div>
           <p >
@@ -126,10 +126,11 @@ height: inherit;
 transform: rotate(90deg);
 
 }
+.imgspin{animation:spin 10s linear infinite;width:50%;filter:invert(1);}
 .rotated{transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
 .line{clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
-    animation:slide 1s linear infinite;background-image:url(/imgs/repeatline.svg);background-size:1rem;
-    background-color:white;height:100%;width:100%;margin-bottom: 1.5rem;
+    animation:slide 1s linear infinite;background-image:url(/imgs/crosshair.svg);background-size:0.5rem;
+    background-color:transparent;filter:invert(1);height:100%;width:100%;margin-bottom: 1.5rem;
 margin-top: 1.3rem;}
 footer{
     margin-top: 2rem;

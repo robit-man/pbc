@@ -45,7 +45,8 @@ input:disabled {
 	color: #ccc;
 }
 
-button {clip-path: polygon(0.5rem 0, 100% 0, 100% 100%, 0 100%, 0 0.5rem);
+button {
+	clip-path: polygon(0.5rem 0, 100% 0, 100% 100%, 0 100%, 0 0.5rem);
 	border:1px solid white;
 	padding:0.5rem 1rem;
 	margin:unset;
