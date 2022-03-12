@@ -68,7 +68,7 @@ import { Router, Link, Route } from "svelte-routing";
  
           <div>
           <p >
-              <b transition:fade  style="" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon.
+              <b transition:fade  style="" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon
             </p> 
             </div>
 
