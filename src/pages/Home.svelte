@@ -126,7 +126,7 @@ height: inherit;
 transform: rotate(90deg);
 
 }
-.imgspin{animation:spin 10s linear infinite;width:50%;filter:invert(1);}
+.imgspin{animation:spin 10s linear infinite;width:50%;}
 .rotated{transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
 .line{clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
     animation:slide 1s linear infinite;background-image:url(/imgs/crosshair.svg);background-size:0.5rem;
