@@ -126,8 +126,13 @@ height: inherit;
 transform: rotate(90deg);
 
 }
-.imgspin{animation:spin 10s linear infinite;height: 50%;
-margin: auto;}
+.imgspin{animation:spin 10s linear infinite;height: calc(100% - 1rem);
+margin: auto;
+background: radial-gradient(white,#fff);
+padding: 0.5rem;
+mix-blend-mode: hue;
+border-radius: 100%;
+filter: invert(1);}
 .rotated{flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
 .line{
 max-height: 300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
