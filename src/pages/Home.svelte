@@ -129,7 +129,8 @@ transform: rotate(90deg);
 .imgspin{animation:spin 10s linear infinite;height: 50%;
 margin: auto;}
 .rotated{flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
-.line{clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
+.line{
+max-height: 300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
     animation:slide 1s linear infinite;background-image:url(/imgs/crosshair.svg);background-size:0.5rem;
     background-color:transparent;filter:invert(1);height:100%;width:100%;margin-bottom: 1.5rem;
 margin-top: 1.3rem;}
@@ -158,7 +159,7 @@ article > div > p{line-height: 1.1;letter-spacing: 0.3rem;
 margin-bottom: unset !important;
 margin-right:-0.3rem;
 }
-.row{display:flex;flex-flow:row;}
+.row{display:flex;flex-flow:row-reverse;}
 .column{display:flex;flex-flow:column;}
 .button-row{
     display: flex;
