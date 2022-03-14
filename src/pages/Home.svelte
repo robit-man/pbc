@@ -97,8 +97,14 @@ import { Router, Link, Route } from "svelte-routing";
     overflow-x: hidden;
 }
 @keyframes slide{
-    0%{background-position-x: 0rem;}
-    100%{background-position-x: 2rem;}
+    0%{background-position-x: 0rem;background-position-y: 0rem;}
+    20%{background-position-y: -2rem;background-size:1rem;background-position-x: 2rem;}
+    30%{background-position-y: -1rem;background-position-x: 0rem;}
+    50%{background-position-x: 2rem;background-position-y: -3rem;}
+    60%{background-position-x: 0rem;background-size:4rem;background-position-y: 0rem;}
+    70%{background-position-y: 2rem;background-position-x: 1rem;}
+    90%{background-position-y: -2rem;background-position-x: 0rem;}
+    100%{background-position-x: -2rem;background-size:1rem;background-position-y: 4rem;}
 }
 header > svg{transform:rotate(-90deg)}
 header{
@@ -136,8 +142,8 @@ filter: invert(1);}
 .rotated{flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
 .line{
 max-height: 300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
-    animation:slide 1s linear infinite;background-image:url(/imgs/crosshair.svg);background-size:0.5rem;
-    background-color:transparent;filter:invert(1);height:100%;width:100%;margin-bottom: 1.5rem;
+    animation:slide 5s ease infinite;background-image:url(/imgs/crosshair.svg);background-size:2rem;
+    background-color:transparent;height:100%;width:100%;margin-bottom: 1.5rem;
 margin-top: 1.3rem;}
 footer{
     margin-top: 2rem;
