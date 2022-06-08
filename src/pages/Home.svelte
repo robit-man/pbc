@@ -171,7 +171,14 @@ transform: rotate(90deg);
     95%{opacity: 1;}
     100%{opacity: 1;}
 }
-
+@keyframes spread{
+    0%{box-shadow:0rem 0rem #ff8f00,0rem -24rem #2d2d2d,-24rem 0rem #1e1e1e,0rem 0rem #4d4d4d;}
+    20%{box-shadow:-1.5rem 0rem #ff8f00,0rem -24rem #2d2d2d,-24rem 0rem #1e1e1e,0rem 0rem #4d4d4d;}
+    40%{box-shadow:-1.5rem -1.5rem #ff8f00,0rem -24rem #2d2d2d,-24rem 0rem #1e1e1e,0rem 0rem #4d4d4d;}
+    60%{box-shadow:-1.5rem -1.5rem #ff8f00,0px -24px #2d2d2d,-24px 648px #1e1e1e,0rem 648px #4d4d4d;}
+    80%{box-shadow:-1.5rem -1.5rem #ff8f00,648px -24px #2d2d2d,-24px 648px #1e1e1e,648px 648px #4d4d4d;}
+    100%{box-shadow:-1.5rem -1.5rem #ff8f00,648px -24px #2d2d2d,-24px 648px #1e1e1e,648px 648px #4d4d4d;}
+}
 .hov{animation:glitch 4s linear infinite;}
 .hov > g{animation:glitch2 5s linear infinite;}
 .imgspin{animation:spin 10s linear infinite;height: calc(100% - 1rem);
@@ -180,7 +187,7 @@ padding: 0.5rem;
 mix-blend-mode: exclusion;
 border-radius: 100%;
 filter: invert(1);}
-.rotated{box-shadow:-1.5rem -1.5rem #ff8f00,648px -24px #2d2d2d,-24px 648px #1e1e1e,648px 648px #4d4d4d;
+.rotated{animation:spread 1s ease;transition:all 0.5s ease;box-shadow:-1.5rem -1.5rem #ff8f00,648px -24px #2d2d2d,-24px 648px #1e1e1e,648px 648px #4d4d4d;
 flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
 .line{transform:rotate(-45deg);filter:invert(1);
 max-height: 300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
