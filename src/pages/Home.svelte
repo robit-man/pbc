@@ -7,16 +7,19 @@ import { Router, Link, Route } from "svelte-routing";
 
 <main>
   <div class="wrapper">
-<div class="row rotated">
+<div class="row rotated" style="  ">
+    <div class="arrow" style="position:absolute;top:-3rem;left:-3rem;height:4rem;width:4rem;box-shadow: -1.5rem -1.5rem #ff8f00;"></div>
+    <div class="arrow" style="position:absolute;top:-6rem;left:-6rem;height:4rem;width:4rem;box-shadow: -1.5rem -1.5rem #ff8f00;"></div>
+    <div class="arrow" style="position:absolute;top:-9rem;left:-9rem;height:4rem;width:4rem;box-shadow: -1.5rem -1.5rem #ff8f00;"></div>
       <header>
 
 
         
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" style=""
+      <svg class="hov" version="1.0" xmlns="http://www.w3.org/2000/svg" style=""
       width="200.000000px" height="200.000000px" viewBox="0 0 400.000000 400.000000"
       preserveAspectRatio="xMidYMid meet">
      
-      <g fill="white" stroke="none" transform="translate(-800.000000,400.000000) scale(0.100000,-0.100000)">
+      <g style="animation-duration: 3s;" fill="white" stroke="none" transform="translate(-800.000000,400.000000) scale(0.100000,-0.100000)">
      
      <path d="M8090 2000 l0 -2000 1995 0 1995 0 0 985 0 985 -1005 0 -1005 0 0 30
      0 30 1005 0 1005 0 0 985 0 985 -1995 0 -2000 0 0 -2000z"/>
@@ -25,7 +28,7 @@ import { Router, Link, Route } from "svelte-routing";
      </svg>
 
 
-     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" style=""
+     <svg class="hov" version="1.0" xmlns="http://www.w3.org/2000/svg" style="animation-duration: 7s;"
      width="200.000000px" height="200.000000px" viewBox="0 0 400.000000 400.000000"
      preserveAspectRatio="xMidYMid meet">
     
@@ -38,11 +41,11 @@ import { Router, Link, Route } from "svelte-routing";
     </svg>   
     
 
-    <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" style=""
+    <svg class="hov" version="1.0"  xmlns="http://www.w3.org/2000/svg" style="animation-duration: 10s;"
     width="200.000000px" height="200.000000px" viewBox="0 0 400.000000 400.000000"
     preserveAspectRatio="xMidYMid meet">
 
-    <g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
+    <g style="animation-duration: 6s;" transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
     fill="white" stroke="none">
     <path d="M0 2000 l0 -2000 995 0 995 0 0 1005 0 1005 1000 0 1000 0 0 995 0
     995 -1995 0 -1995 0 0 -2000z m3030 1000 l0 -30 -1030 0 -1030 0 0 30 0 30
@@ -55,23 +58,28 @@ import { Router, Link, Route } from "svelte-routing";
       
 
              </header>
-      <article> <div class="button-row">
-        <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a><div class="crosshair" style="margin-left:0.3rem;"></div>
-        <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
-        <a href="https://noclip.org/"><button>NOCLIP</button></a>
-        <a href="https://revest.finance/"><button>REVEST</button></a><div class="crosshair" style="margin-left:0.3rem;"></div>
-        <a href="https://rena.finance"><button>RENA</button></a>
-        <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
-        <a href="https://www.guranft.com/"><button>GURA NFT</button></a>        <div class="crosshair" style="margin-left:0.3rem;"></div>
-
-      </div>                    <div class="line" style="display:flex;flex-flow:wrap;justify-content:center;"><img class="imgspin" src="/imgs/pointblank.svg" alt=""></div>
+      <article> 
+      
+      
+        <div class="line" style="display:flex;flex-flow:wrap;justify-content:center;"><img class="imgspin" src="/imgs/pointblank.svg" alt=""></div>
  
           <div>
           <p >
-              <b transition:fade  style="" >POINTBLANK LLC</b> is a Rapid Prototyping, Consulting, and App Development public benefit corporation out of Portland Oregon
+              <b transition:fade  style="color:#ff8f00;" >POINTBLANK LLC</b> is a Rapid Prototyping, Aerospace, and DAPP Development public benefit corporation out of Portland Oregon
             </p> 
             </div>
 
+
+            <div class="button-row">
+                <a href="https://www.prnewswire.com/news-releases/spacex-to-launch-doge-1-to-the-moon-301287016.html"><button>DOGE-1</button></a><div class="crosshair" style="margin-left:0.3rem;"></div>
+                <a href="https://xiprotocol.io/"><button>XI PROTOCOL</button></a>
+                <a href="https://noclip.org/"><button>NOCLIP</button></a>
+                <a href="https://revest.finance/"><button>REVEST</button></a><div class="crosshair" style="margin-left:0.3rem;"></div>
+                <a href="https://rena.finance"><button>RENA</button></a>
+                <a href="https://www.olympusdao.finance/"><button>OLYMPUS</button></a>
+                <a href="https://www.guranft.com/"><button>GURA NFT</button></a>        <div class="crosshair" style="margin-left:0.3rem;"></div>
+                <a href="https://twitter.com/POINTBLANK_LLC" > <button>TWITTER</button> </a>
+              </div>    
     </article>
 </div>
     
@@ -132,18 +140,52 @@ height: inherit;
 transform: rotate(90deg);
 
 }
+@keyframes glitch2{
+    0%{fill:white;}
+    20%{fill:white;}
+    21%{fill:#ff8f00;}
+    22%{fill:white;}
+    42%{fill:white;}
+    43%{fill:#ff8f00;}
+    47%{fill:white;}
+    48%{fill:#ff8f00;}
+    60%{fill:white;}
+    78%{fill:white;}
+    72%{fill:#ff8f00;}
+    75%{fill:white;}
+    100%{fill:white;}
+}
+
+@keyframes glitch{
+    0%{opacity: 1;}
+    20%{opacity: 1;}
+    21%{opacity: 0;}
+    22%{opacity: 1;}
+    52%{opacity: 1;}
+    53%{opacity: 0;}
+    57%{opacity: 1;}
+    58%{opacity: 0;}
+    60%{opacity: 1;}
+    88%{opacity: 1;}
+    92%{opacity: 0;}
+    95%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+.hov{animation:glitch 4s linear infinite;}
+.hov > g{animation:glitch2 5s linear infinite;}
 .imgspin{animation:spin 10s linear infinite;height: calc(100% - 1rem);
 margin: auto;
-background: radial-gradient(white,#fff);
 padding: 0.5rem;
-mix-blend-mode: hue;
+mix-blend-mode: exclusion;
 border-radius: 100%;
 filter: invert(1);}
-.rotated{flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
-.line{
+.rotated{box-shadow: -1.5rem -1.5rem #ff8f00;
+flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
+.line{transform:rotate(-45deg);filter:invert(1);
 max-height: 300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
-    animation:slide 5s ease infinite;background-image:url(/imgs/crosshair.svg);background-size:2rem;
-    background-color:transparent;height:100%;width:100%;margin-bottom: 1.5rem;
+   background-image:url(/imgs/hqr.gif), url(/imgs/lqr.gif), radial-gradient(transparent,transparent, transparent, white, white, white);background-blend-mode:color-dodge;background-size:cover;mix-blend-mode: color;background-position:center;background-repeat: no-repeat;
+    background-color:transparent;height:calc(100% - 3rem);width:calc(100% - 3rem);margin: 1.5rem;border-radius: 100%;
 margin-top: 1.3rem;}
 footer{
     margin-top: 2rem;
@@ -160,7 +202,7 @@ footer > .row p{
     margin-top:-4px;
 }
 article{
-    padding:0.5rem 0rem;display:flex;flex-flow:column;justify-content:space-between;max-width:400px;
+    padding:0.5rem 0rem;display:flex;flex-flow:wrap;justify-content:space-between;max-width:400px;
     margin-top:1rem;height:600px;
 }
 article > div > p{line-height: 1.1;letter-spacing: 0.3rem;
@@ -175,7 +217,7 @@ margin-right:-0.3rem;
 .button-row{
     display: flex;
     flex-flow: wrap;
-    justify-content: flex-end;max-width: 512px;
+    justify-content: flex-end;max-width: 600px;padding-top:1rem;
 height: fit-content;
 margin-top: -0.2rem;
 }.crosshair{background-image:url(/imgs/crosshair.svg); width:2.32rem;height:2.32rem;background-size:2.32rem;filter:invert(1);transition:all 0.2s ease;}.crosshair:hover{clip-path: polygon(0 0, calc(100% - 1rem) 0%, 100% 1rem, 100% 100%, 1rem 100%, 0 calc(100% - 1rem));}
@@ -212,14 +254,47 @@ header > h1{
     line-height:0.7;
 
 
+}    .arrow{display:none;}
+
+.wrapper{padding:1rem;}
+
+header > svg{transform:rotate(0deg);width:33%;height:auto;}
+
+.rotated{box-shadow: 1.5rem 0rem #ff8f00;
+border-top-left-radius: 0rem;display:flex;flex-flow:column;transform:rotate(0deg);margin:auto;transition:all 0.2s ease;padding-right:1rem;}
+.line{transform:rotate(0deg);height:300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 2rem 100%, 0 calc(100% - 2rem));}
+article{max-width:600px;height:auto;width:100%;flex-flow:wrap;margin-bottom: -0.7rem;}
+    header{
+    height:auto;
+    width: 100%;
+    padding:0rem;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    clip-path: unset;
+    pointer-events: none;
+    border-top-right-radius: unset;
+    margin-top: 0rem;
+    }
+}
+@media screen and (max-height: 950px){
+    .arrow{display:none;}
+header > h1{
+    margin-left:0rem;
+    line-height: 1;   
+    font-size:2rem;
+    line-height:0.7;
+
+
 }
 .wrapper{padding:1rem;}
 
 header > svg{transform:rotate(0deg);width:33%;height:auto;}
 
-.rotated{display:flex;flex-flow:column;transform:rotate(0deg);margin:auto;transition:all 0.2s ease;}
-.line{height:100px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 2rem 100%, 0 calc(100% - 2rem));}
-article{height:auto;width:100%;}
+.rotated{box-shadow: 1.5rem 0rem #ff8f00;
+border-top-left-radius: 0rem;display:flex;flex-flow:column;transform:rotate(0deg);margin:auto;transition:all 0.2s ease;padding-right:1rem;}
+.line{transform:rotate(0deg);height:300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 2rem 100%, 0 calc(100% - 2rem));}
+article{height:auto;width:100%;flex-flow:wrap;max-width:600px;margin-bottom: -0.7rem;}
     header{
     height:auto;
     width: 100%;
