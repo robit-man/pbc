@@ -101,7 +101,7 @@ import { Router, Link, Route } from "svelte-routing";
 .wrapper{
     padding:0rem;
     margin: auto;
-    height:calc(100vh - 2rem);display:flex;justify-content: center;
+    height:100vh;display:flex;justify-content: center;
     overflow-x: hidden;
 }
 @keyframes slide{
@@ -180,7 +180,7 @@ padding: 0.5rem;
 mix-blend-mode: exclusion;
 border-radius: 100%;
 filter: invert(1);}
-.rotated{box-shadow: -1.5rem -1.5rem #ff8f00;
+.rotated{box-shadow:-1.5rem -1.5rem #ff8f00,648px -24px #2d2d2d,-24px 648px #1e1e1e,648px 648px #4d4d4d;
 flex-flow:row-reverse;transform:rotate(45deg);margin:auto;transition:all 0.2s ease;}
 .line{transform:rotate(-45deg);filter:invert(1);
 max-height: 300px;clip-path: polygon(0 0, 100% 0%, 100% 0rem, 100% 100%, 4rem 100%, 0 calc(100% - 4em));
@@ -256,7 +256,7 @@ header > h1{
 
 }    .arrow{display:none;}
 
-.wrapper{padding:1rem;}
+.wrapper{height:calc(100vh - 2rem);padding:1rem;}
 
 header > svg{transform:rotate(0deg);width:33%;height:auto;}
 
@@ -287,7 +287,7 @@ header > h1{
 
 
 }
-.wrapper{padding:1rem;}
+.wrapper{height:calc(100vh - 2rem);padding:1rem;}
 
 header > svg{transform:rotate(0deg);width:33%;height:auto;}
 
