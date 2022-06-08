@@ -101,7 +101,7 @@ import { Router, Link, Route } from "svelte-routing";
 .wrapper{
     padding:0rem;
     margin: auto;
-    height:100vh;display:flex;justify-content: center;
+    height:calc(100vh - 2rem);display:flex;justify-content: center;
     overflow-x: hidden;
 }
 @keyframes slide{
